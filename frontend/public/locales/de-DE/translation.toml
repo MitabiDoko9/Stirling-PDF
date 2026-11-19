@@ -7830,7 +7830,11 @@ decorativeLabel = "Dekoratives Bild"
 description = "Bildbeschreibung"
 descriptionInfo = "Screenreader lesen dies anstelle des Bildes vor."
 encrypted = "Tags können in einer verschlüsselten Datei nicht bearbeitet werden"
+figureDescription = "Figure description"
+figureDescriptionInfo = "Screen readers read this out in place of the figure."
 formFieldDescription = "Feldbeschreibung"
+formulaDescription = "Formula description"
+formulaDescriptionInfo = "Screen readers read this out in place of the formula. Say it as you would aloud, such as \"x squared plus one\"."
 heading = "Barrierefreiheit"
 innerTagLabel = "Tag {{number}}"
 innerTags = "Tags in diesem Text"
@@ -7842,7 +7846,7 @@ missingDescriptions = "Fehlende Beschreibungen"
 mixedContent = "Abbildung enthält weitere Inhalte"
 mixedTags = "Gemischt"
 needsDescriptionBadge = "Keine Beschreibung"
-nextImage = "Nächstes Bild"
+nextToReview = "Next to review"
 notFigure = "Als Teil des Textes getaggt"
 removeTag = "Tag entfernen"
 saveFailed = "Ihre Änderungen an der Barrierefreiheit konnten nicht gespeichert werden, daher wurde die Datei nicht gespeichert. Machen Sie sie rückgängig und versuchen Sie es erneut."
@@ -9661,10 +9665,6 @@ signInToStart = "Melden Sie sich an, um Ihre Testphase zu starten"
 stage = "Stufe {{current}} von {{total}}"
 stagesLabel = "Fortschritt"
 
-[portal.enterprise.connect]
-ownerOnly = "Nur der Besitzer dieses Servers kann ihn verbinden. Bitten Sie ihn, diese Seite zu öffnen."
-unavailable = "Die Verbindung zu einem Stirling-Konto ist auf diesem Server deaktiviert. Buchen Sie ein Gespräch, und wir richten Ihre Testphase gemeinsam ein."
-
 [portal.enterprise.landing]
 lede = "14 Tage kostenlos testen, dann Ihr Angebot erstellen und Ihre Vereinbarung hier unterzeichnen. Keine Karte erforderlich."
 tickAgreement = "Eine Vereinbarung, die MSA, Bestellformular, EULA und DPA abdeckt"
@@ -11283,11 +11283,6 @@ downloadOffline = "Offline-Lizenz herunterladen (.lic)"
 hint = "Fügen Sie diesen Schlüssel in eine selbst gehostete Instanz ein, um sie zu aktivieren, oder bewahren Sie ihn für Ihre Unterlagen auf. Bewahren Sie ihn sicher auf."
 label = "Ihr Lizenzschlüssel"
 trialFileHint = "Dies ist Ihre Testlizenzdatei. Sobald Ihre Vereinbarung abgeschlossen ist, kommen Sie zurück und laden Sie sie erneut herunter — im Gegensatz zum Online-Lizenzschlüssel aktualisiert sich die .lic-Datei nicht von selbst."
-
-[portal.procurement.link]
-cta = "Konto verknüpfen"
-description = "Die Beschaffung läuft über Ihr verknüpftes Stirling-Konto: So stellen wir die Testversion bereit, bepreisen Ihr Angebot und starten die Abrechnung. Verknüpfen Sie ein Konto, um zu beginnen."
-title = "Verknüpfen Sie Ihr Konto, um zu beginnen"
 
 [portal.procurement.live]
 description = "Ihr Abonnement ist aktiv und Ihre Lizenz wurde ausgestellt. Ihr Team ist bereitgestellt und die Abrechnung hat begonnen."

@@ -7830,7 +7830,11 @@ decorativeLabel = "Íomhá mhaisiúil"
 description = "Cur síos ar íomhá"
 descriptionInfo = "Léann léitheoirí scáileáin é seo amach in ionad na híomhá."
 encrypted = "Ní féidir clibeanna a chur in eagar i gcomhad criptithe"
+figureDescription = "Figure description"
+figureDescriptionInfo = "Screen readers read this out in place of the figure."
 formFieldDescription = "Cur síos ar an réimse"
+formulaDescription = "Formula description"
+formulaDescriptionInfo = "Screen readers read this out in place of the formula. Say it as you would aloud, such as \"x squared plus one\"."
 heading = "Inrochtaineacht"
 innerTagLabel = "Clib {{number}}"
 innerTags = "Clibeanna sa téacs seo"
@@ -7842,7 +7846,7 @@ missingDescriptions = "Cur síos ar iarraidh"
 mixedContent = "Tá ábhar eile san fhíor"
 mixedTags = "Measctha"
 needsDescriptionBadge = "Gan cur síos"
-nextImage = "An chéad íomhá eile"
+nextToReview = "Next to review"
 notFigure = "Clibáilte mar chuid den téacs"
 removeTag = "Bain clib"
 saveFailed = "Níorbh fhéidir do chuid athruithe inrochtaineachta a shábháil, mar sin níor sábháladh an comhad. Cealaigh iad agus bain triail eile as."
@@ -9661,10 +9665,6 @@ signInToStart = "Sínigh isteach chun do thriail a thosú"
 stage = "Céim {{current}} as {{total}}"
 stagesLabel = "Dul chun cinn"
 
-[portal.enterprise.connect]
-ownerOnly = "Ní féidir ach le húinéir an fhreastalaí seo é a cheangal. Iarr orthu an leathanach seo a oscailt."
-unavailable = "Tá nascadh le cuntas Stirling múchta ar an bhfreastalaí seo. Cuir glao in áirithe agus socróimid do thriail leat."
-
 [portal.enterprise.landing]
 lede = "Bain triail saor in aisce as ar feadh 14 lá, ansin tóg do luachan agus sínigh d’aontas anseo. Ní theastaíonn cárta."
 tickAgreement = "Comhaontú amháin a chlúdaíonn an MSA, foirm ordaithe, EULA agus DPA"
@@ -11283,11 +11283,6 @@ downloadOffline = "Íoslódáil ceadúnas as líne (.lic)"
 hint = "Greamaigh an eochair seo isteach in instance self-hosted chun é a ghníomhachtú, nó coinnigh í do do thaifid. Coinnigh slán í."
 label = "D’eochair cheadúnais"
 trialFileHint = "Seo do chomhad ceadúnais trialach. Nuair a bheidh do chomhaontú i bhfeidhm, tar ar ais agus íoslódáil arís é — murab ionann agus an eochair cheadúnais ar líne, ní nuashonróidh an comhad .lic é féin."
-
-[portal.procurement.link]
-cta = "Nasc cuntas"
-description = "Ritheann soláthar ar do chuntas Stirling nasctha: sin mar a sholáthraímid an triail, a phraghsálaimid do luachan, agus a thosaímid billeáil. Nasc cuntas chun tosú."
-title = "Nasc do chuntas chun tosú"
 
 [portal.procurement.live]
 description = "Tá do shíntiús gníomhach agus tá do cheadúnas eisithe. Tá d’fhoireann soláthraithe agus tá billeáil tosaithe."

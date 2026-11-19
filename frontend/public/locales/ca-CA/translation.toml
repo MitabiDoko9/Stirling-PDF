@@ -7830,7 +7830,11 @@ decorativeLabel = "Imatge decorativa"
 description = "Descripció de la imatge"
 descriptionInfo = "Els lectors de pantalla ho llegeixen en lloc de la imatge."
 encrypted = "No es poden editar les etiquetes en un fitxer xifrat"
+figureDescription = "Figure description"
+figureDescriptionInfo = "Screen readers read this out in place of the figure."
 formFieldDescription = "Descripció del camp"
+formulaDescription = "Formula description"
+formulaDescriptionInfo = "Screen readers read this out in place of the formula. Say it as you would aloud, such as \"x squared plus one\"."
 heading = "Accessibilitat"
 innerTagLabel = "Etiqueta {{number}}"
 innerTags = "Etiquetes en aquest text"
@@ -7842,7 +7846,7 @@ missingDescriptions = "Descripcions que falten"
 mixedContent = "La figura inclou altres continguts"
 mixedTags = "Barrejat"
 needsDescriptionBadge = "Sense descripció"
-nextImage = "Imatge següent"
+nextToReview = "Next to review"
 notFigure = "Etiquetat com a part del text"
 removeTag = "Elimina etiqueta"
 saveFailed = "No s'han pogut desar els canvis d'accessibilitat, de manera que el fitxer no s'ha desat. Desfeu-los i torneu-ho a provar."
@@ -9661,10 +9665,6 @@ signInToStart = "Inicia la sessió per començar la prova"
 stage = "Etapa {{current}} de {{total}}"
 stagesLabel = "Progrés"
 
-[portal.enterprise.connect]
-ownerOnly = "Només el propietari d'aquest servidor el pot connectar. Demana-li que obri aquesta pàgina."
-unavailable = "Connectar-se a un compte de Stirling està desactivat en aquest servidor. Reserva una trucada i configurarem la prova amb tu."
-
 [portal.enterprise.landing]
 lede = "Prova-ho gratuïtament durant 14 dies, després construeix el teu pressupost i signa l'acord aquí. No cal targeta."
 tickAgreement = "Un únic acord que cobreix l'MSA, el formulari de comanda, l'EULA i el DPA"
@@ -11283,11 +11283,6 @@ downloadOffline = "Baixa la llicència offline (.lic)"
 hint = "Enganxa aquesta clau en una instància autoallotjada per activar-la, o conserva-la per als teus registres. Guarda-la en un lloc segur."
 label = "La teva clau de llicència"
 trialFileHint = "Aquest és el teu fitxer de llicència de prova. Quan l'acord estigui en vigor, torna i descarrega'l de nou; a diferència de la clau de llicència en línia, el fitxer .lic no s'actualitzarà tot sol."
-
-[portal.procurement.link]
-cta = "Enllaça el compte"
-description = "La contractació s'executa amb el teu compte de Stirling enllaçat: així aprovisionem la prova, fixem el preu del pressupost i iniciem la facturació. Enllaça un compte per començar."
-title = "Enllaça el teu compte per començar"
 
 [portal.procurement.live]
 description = "La teva subscripció és activa i la teva llicència s'ha emès. El teu equip està aprovisionat i la facturació ha començat."

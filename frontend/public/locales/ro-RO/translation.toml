@@ -7830,7 +7830,11 @@ decorativeLabel = "Imagine decorativă"
 description = "Descrierea imaginii"
 descriptionInfo = "Cititoarele de ecran citesc acest text în locul imaginii."
 encrypted = "Etichetele nu pot fi editate într-un fișier criptat"
+figureDescription = "Figure description"
+figureDescriptionInfo = "Screen readers read this out in place of the figure."
 formFieldDescription = "Descriere câmp"
+formulaDescription = "Formula description"
+formulaDescriptionInfo = "Screen readers read this out in place of the formula. Say it as you would aloud, such as \"x squared plus one\"."
 heading = "Accesibilitate"
 innerTagLabel = "Eticheta {{number}}"
 innerTags = "Etichete în acest text"
@@ -7842,7 +7846,7 @@ missingDescriptions = "Descrieri lipsă"
 mixedContent = "Figura include alt conținut"
 mixedTags = "Mixt"
 needsDescriptionBadge = "Fără descriere"
-nextImage = "Imaginea următoare"
+nextToReview = "Next to review"
 notFigure = "Etichetat ca parte a textului"
 removeTag = "Elimină eticheta"
 saveFailed = "Modificările de accesibilitate nu au putut fi salvate, așa că fișierul nu a fost salvat. Anulați-le și încercați din nou."
@@ -9661,10 +9665,6 @@ signInToStart = "Autentificați-vă pentru a începe proba"
 stage = "Etapa {{current}} din {{total}}"
 stagesLabel = "Progres"
 
-[portal.enterprise.connect]
-ownerOnly = "Numai proprietarul acestui server îl poate conecta. Rugați-l să deschidă această pagină."
-unavailable = "Conectarea la un cont Stirling este dezactivată pe acest server. Programați un apel și vă configurăm împreună perioada de probă."
-
 [portal.enterprise.landing]
 lede = "Încercați gratuit timp de 14 zile, apoi construiți-vă oferta și semnați acordul aici. Nu este necesar card."
 tickAgreement = "Un singur acord care acoperă MSA, ordinul, EULA și DPA"
@@ -11283,11 +11283,6 @@ downloadOffline = "Descarcă licența offline (.lic)"
 hint = "Lipește această cheie într-o instanță self-hosted pentru a o activa sau păstreaz-o pentru evidențele tale. Păstreaz-o în siguranță."
 label = "Cheia ta de licență"
 trialFileHint = "Acesta este fișierul dvs. de licență de probă. După ce acordul este în vigoare, reveniți și descărcați-l din nou — spre deosebire de cheia de licență online, fișierul .lic nu se actualizează singur."
-
-[portal.procurement.link]
-cta = "Conectează contul"
-description = "Achizițiile rulează pe contul tău Stirling conectat: așa provisionăm trialul, stabilim prețul ofertei și pornim facturarea. Conectează un cont pentru a începe."
-title = "Conectează-ți contul pentru a începe"
 
 [portal.procurement.live]
 description = "Abonamentul tău este activ și licența ta a fost emisă. Echipa ta este provisionată și facturarea a început."

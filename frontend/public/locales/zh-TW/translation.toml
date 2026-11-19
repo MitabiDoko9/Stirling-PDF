@@ -7830,7 +7830,11 @@ decorativeLabel = "裝飾性圖片"
 description = "圖片描述"
 descriptionInfo = "螢幕閱讀器會讀出此內容以取代圖片。"
 encrypted = "無法編輯加密檔案中的標籤"
+figureDescription = "Figure description"
+figureDescriptionInfo = "Screen readers read this out in place of the figure."
 formFieldDescription = "欄位說明"
+formulaDescription = "Formula description"
+formulaDescriptionInfo = "Screen readers read this out in place of the formula. Say it as you would aloud, such as \"x squared plus one\"."
 heading = "無障礙"
 innerTagLabel = "標籤 {{number}}"
 innerTags = "此文字中的標籤"
@@ -7842,7 +7846,7 @@ missingDescriptions = "缺少描述"
 mixedContent = "圖片包含其他內容"
 mixedTags = "混合"
 needsDescriptionBadge = "無描述"
-nextImage = "下一張圖片"
+nextToReview = "Next to review"
 notFigure = "標記為文字的一部分"
 removeTag = "移除標籤"
 saveFailed = "無法儲存您的無障礙變更，因此檔案未儲存。請復原這些變更後再試一次。"
@@ -9661,10 +9665,6 @@ signInToStart = "登入以開始試用"
 stage = "階段 {{current}} / {{total}}"
 stagesLabel = "進度"
 
-[portal.enterprise.connect]
-ownerOnly = "只有此伺服器的擁有者可以連接它。請他們開啟此頁面。"
-unavailable = "此伺服器已關閉連接 Stirling 帳戶的功能。預約通話，我們將協助您設定試用。"
-
 [portal.enterprise.landing]
 lede = "免費試用 14 天，接著在此建立報價並簽署協議。無需信用卡。"
 tickAgreement = "一份協議涵蓋 MSA、訂單表、EULA 與 DPA"
@@ -11283,11 +11283,6 @@ downloadOffline = "下載離線授權 (.lic)"
 hint = "將此金鑰貼到自架執行個體以啟用，或保留作為記錄。請妥善保管。"
 label = "您的授權金鑰"
 trialFileHint = "這是您的試用授權檔案。協議就緒後，請回來再次下載 — 與線上授權金鑰不同，.lic 檔案不會自行更新。"
-
-[portal.procurement.link]
-cta = "連結帳戶"
-description = "採購流程會在您連結的 Stirling 帳戶上執行：我們會用它來佈建試用、為報價定價並開始計費。連結帳戶即可開始。"
-title = "連結您的帳戶以開始"
 
 [portal.procurement.live]
 description = "您的訂閱已啟用，授權已核發。您的團隊已完成佈建，計費也已開始。"

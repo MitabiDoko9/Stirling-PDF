@@ -7830,7 +7830,11 @@ decorativeLabel = "Dekorativní obrázek"
 description = "Popis obrázku"
 descriptionInfo = "Čtečky obrazovky toto přečtou místo obrázku."
 encrypted = "Tagy nelze upravovat v šifrovaném souboru"
+figureDescription = "Figure description"
+figureDescriptionInfo = "Screen readers read this out in place of the figure."
 formFieldDescription = "Popis pole"
+formulaDescription = "Formula description"
+formulaDescriptionInfo = "Screen readers read this out in place of the formula. Say it as you would aloud, such as \"x squared plus one\"."
 heading = "Přístupnost"
 innerTagLabel = "Tag {{number}}"
 innerTags = "Tagy v tomto textu"
@@ -7842,7 +7846,7 @@ missingDescriptions = "Chybějící popisy"
 mixedContent = "Obrázek obsahuje další obsah"
 mixedTags = "Smíšené"
 needsDescriptionBadge = "Bez popisu"
-nextImage = "Další obrázek"
+nextToReview = "Next to review"
 notFigure = "Označeno jako součást textu"
 removeTag = "Odebrat tag"
 saveFailed = "Vaše změny přístupnosti se nepodařilo uložit, soubor tedy nebyl uložen. Vraťte je zpět a zkuste to znovu."
@@ -9661,10 +9665,6 @@ signInToStart = "Přihlaste se a spusťte zkušební verzi"
 stage = "Fáze {{current}} z {{total}}"
 stagesLabel = "Postup"
 
-[portal.enterprise.connect]
-ownerOnly = "K tomuto serveru se může připojit pouze jeho vlastník. Požádejte ho, aby otevřel tuto stránku."
-unavailable = "Připojení ke Stirling účtu je na tomto serveru vypnuto. Domluvte si hovor a zprovozníme s vámi zkušební verzi."
-
 [portal.enterprise.landing]
 lede = "Vyzkoušejte zdarma na 14 dní, pak si zde sestavte nabídku a podepište dohodu. Není potřeba karta."
 tickAgreement = "Jedna smlouva pokrývající MSA, objednávkový formulář, EULA a DPA"
@@ -11283,11 +11283,6 @@ downloadOffline = "Stáhnout offline licenci (.lic)"
 hint = "Vložte tento klíč do self-hosted instance pro její aktivaci, nebo si ho ponechte pro své záznamy. Uchovejte ho v bezpečí."
 label = "Váš licenční klíč"
 trialFileHint = "Toto je váš soubor zkušební licence. Jakmile bude vaše dohoda uzavřena, vraťte se a stáhněte si jej znovu — na rozdíl od online licenčního klíče se soubor .lic sám neaktualizuje."
-
-[portal.procurement.link]
-cta = "Propojit účet"
-description = "Pořízení běží na vašem propojeném účtu Stirling: tak zřizujeme trial, oceňujeme vaši nabídku a spouštíme fakturaci. Propojte účet a začněte."
-title = "Pro začátek propojte svůj účet"
 
 [portal.procurement.live]
 description = "Vaše předplatné je aktivní a licence byla vydána. Váš tým je zřízen a fakturace začala."

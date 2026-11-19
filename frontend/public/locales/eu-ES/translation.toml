@@ -7830,7 +7830,11 @@ decorativeLabel = "Irudi apaingarria"
 description = "Irudiaren deskribapena"
 descriptionInfo = "Pantaila-irakurgailuek hau irakurtzen dute irudiaren ordez."
 encrypted = "Etiketak ezin dira editatu fitxategi zifratu batean"
+figureDescription = "Figure description"
+figureDescriptionInfo = "Screen readers read this out in place of the figure."
 formFieldDescription = "Eremuaren deskribapena"
+formulaDescription = "Formula description"
+formulaDescriptionInfo = "Screen readers read this out in place of the formula. Say it as you would aloud, such as \"x squared plus one\"."
 heading = "Irisgarritasuna"
 innerTagLabel = "{{number}} etiketa"
 innerTags = "Testu honetako etiketak"
@@ -7842,7 +7846,7 @@ missingDescriptions = "Deskribapenak falta dira"
 mixedContent = "Irudiak beste eduki bat dauka"
 mixedTags = "Nahasia"
 needsDescriptionBadge = "Deskribapenik gabe"
-nextImage = "Hurrengo irudia"
+nextToReview = "Next to review"
 notFigure = "Testuaren zati gisa etiketatuta"
 removeTag = "Kendu etiketa"
 saveFailed = "Zure irisgarritasun-aldaketak ezin izan dira gorde; beraz, fitxategia ez da gorde. Desegin aldaketak eta saiatu berriro."
@@ -9661,10 +9665,6 @@ signInToStart = "Hasi saioa probaldia hasteko"
 stage = "{{current}} / {{total}} etapa"
 stagesLabel = "Aurrerapena"
 
-[portal.enterprise.connect]
-ownerOnly = "Zerbitzari honen jabeak bakarrik konekta dezake. Eskatu orri hau irekitzea."
-unavailable = "Zerbitzari honetan desgaituta dago Stirling kontu batera konektatzea. Erreserbatu dei bat eta zurekin batera konfiguratuko dugu proba."
-
 [portal.enterprise.landing]
 lede = "Probatu doan 14 egunez, gero eraiki zure eskaintza eta sinatu zure akordioa hemen. Ez da txartelik behar."
 tickAgreement = "MSA, eskaera-orria, EULA eta DPA estaltzen dituen akordio bakarra"
@@ -11283,11 +11283,6 @@ downloadOffline = "Deskargatu offline lizentzia (.lic)"
 hint = "Itsatsi gako hau self-hosted instantzia batean aktibatzeko, edo gorde zure erregistroetarako. Gorde seguru."
 label = "Zure lizentzia-gakoa"
 trialFileHint = "Hau zure proba-lizentziaren fitxategia da. Zure akordioa indarrean dagoenean, itzuli eta deskargatu berriro — online lizentzia-gakoa ez bezala, .lic fitxategia ez da berez eguneratuko."
-
-[portal.procurement.link]
-cta = "Lotu kontua"
-description = "Erosketa zure lotutako Stirling kontuan exekutatzen da: horrela hornitzen dugu probaldia, aurrekontuaren prezioa kalkulatzen dugu eta fakturazioa hasten dugu. Lotu kontu bat hasteko."
-title = "Lotu zure kontua hasteko"
 
 [portal.procurement.live]
 description = "Zure harpidetza aktibo dago eta zure lizentzia jaulkita dago. Zure taldea hornituta dago eta fakturazioa hasi da."

@@ -7830,7 +7830,11 @@ decorativeLabel = "صورة زخرفية"
 description = "وصف الصورة"
 descriptionInfo = "تقرأ قارئات الشاشة هذا الوصف بدلًا من الصورة."
 encrypted = "لا يمكن تحرير الوسوم في ملف مشفّر"
+figureDescription = "Figure description"
+figureDescriptionInfo = "Screen readers read this out in place of the figure."
 formFieldDescription = "وصف الحقل"
+formulaDescription = "Formula description"
+formulaDescriptionInfo = "Screen readers read this out in place of the formula. Say it as you would aloud, such as \"x squared plus one\"."
 heading = "إمكانية الوصول"
 innerTagLabel = "الوسم {{number}}"
 innerTags = "الوسوم في هذا النص"
@@ -7842,7 +7846,7 @@ missingDescriptions = "أوصاف مفقودة"
 mixedContent = "يتضمن الشكل محتوى آخر"
 mixedTags = "مختلط"
 needsDescriptionBadge = "لا يوجد وصف"
-nextImage = "الصورة التالية"
+nextToReview = "Next to review"
 notFigure = "موسوم كجزء من النص"
 removeTag = "إزالة الوسم"
 saveFailed = "تعذّر حفظ تغييرات إمكانية الوصول، لذا لم يتم حفظ الملف. تراجع عنها وحاول مرة أخرى."
@@ -9661,10 +9665,6 @@ signInToStart = "سجّل الدخول لبدء تجربتك"
 stage = "المرحلة {{current}} من {{total}}"
 stagesLabel = "التقدم"
 
-[portal.enterprise.connect]
-ownerOnly = "يمكن لمالك هذا الخادم فقط ربطه. اطلب منه فتح هذه الصفحة."
-unavailable = "تم إيقاف ربط حساب Stirling على هذا الخادم. احجز مكالمة وسنُعدّ تجربتك معك."
-
 [portal.enterprise.landing]
 lede = "جرّبه مجانًا لمدة 14 يومًا، ثم ابنِ عرض سعرك ووقّع اتفاقيتك هنا. لا حاجة لبطاقة."
 tickAgreement = "اتفاقية واحدة تغطي MSA ونموذج الطلب وEULA وDPA"
@@ -11283,11 +11283,6 @@ downloadOffline = "تنزيل ترخيص Offline (.lic)"
 hint = "الصق هذا المفتاح في مثيل self-hosted لتفعيله، أو احتفظ به لسجلاتك. حافظ عليه آمنًا."
 label = "مفتاح الترخيص الخاص بك"
 trialFileHint = "هذا ملف الترخيص التجريبي الخاص بك. بمجرد اكتمال اتفاقيتك، عُد ونزّله مرة أخرى — فعلى عكس مفتاح الترخيص عبر الإنترنت، لن يتم تحديث ملف .lic من تلقاء نفسه."
-
-[portal.procurement.link]
-cta = "ربط الحساب"
-description = "تعمل المشتريات على حساب Stirling المرتبط لديك: فهو الطريقة التي نوفر بها التجربة، ونسعّر عرضك، ونبدأ الفوترة. اربط حسابًا للبدء."
-title = "اربط حسابك للبدء"
 
 [portal.procurement.live]
 description = "اشتراكك نشط وتم إصدار ترخيصك. تم توفير فريقك وبدأت الفوترة."
