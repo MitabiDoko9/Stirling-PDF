@@ -109,6 +109,7 @@ const StampPositionFormattingSettings = ({
           <Text className={styles.labelText}>{sizeLabel}</Text>
           <Group className={styles.sliderGroup} align="center">
             <NumberInput
+              aria-label={sizeLabel}
               value={parameters.fontSize}
               onChange={(v) =>
                 onParameterChange(
@@ -124,6 +125,7 @@ const StampPositionFormattingSettings = ({
               disabled={disabled}
             />
             <Slider
+              thumbLabel={sizeLabel}
               value={parameters.fontSize}
               onChange={(v) => onParameterChange("fontSize", v)}
               min={1}
@@ -142,6 +144,7 @@ const StampPositionFormattingSettings = ({
           </Text>
           <Group className={styles.sliderGroup} align="center">
             <NumberInput
+              aria-label={t("AddStampRequest.rotation", "Rotation")}
               value={parameters.rotation}
               onChange={(v) =>
                 onParameterChange("rotation", typeof v === "number" ? v : 0)
@@ -155,6 +158,7 @@ const StampPositionFormattingSettings = ({
               disabled={disabled}
             />
             <Slider
+              thumbLabel={t("AddStampRequest.rotation", "Rotation")}
               value={parameters.rotation}
               onChange={(v) => onParameterChange("rotation", v)}
               min={-180}
@@ -172,6 +176,7 @@ const StampPositionFormattingSettings = ({
           </Text>
           <Group className={styles.sliderGroup} align="center">
             <NumberInput
+              aria-label={t("AddStampRequest.opacity", "Opacity")}
               value={parameters.opacity}
               onChange={(v) =>
                 onParameterChange("opacity", typeof v === "number" ? v : 0)
@@ -184,6 +189,7 @@ const StampPositionFormattingSettings = ({
               disabled={disabled}
             />
             <Slider
+              thumbLabel={t("AddStampRequest.opacity", "Opacity")}
               value={parameters.opacity}
               onChange={(v) => onParameterChange("opacity", v)}
               min={0}
