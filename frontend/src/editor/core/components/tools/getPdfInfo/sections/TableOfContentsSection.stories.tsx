@@ -9,7 +9,7 @@ const tocArray: PdfTocEntry[] = [
 ];
 
 const meta = {
-  title: "Tools/GetPdfInfo/TableOfContentsSection",
+  title: "Tool Parts/GetPdfInfo/TableOfContentsSection",
   component: TableOfContentsSection,
   parameters: { layout: "padded" },
 } satisfies Meta<typeof TableOfContentsSection>;

@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from "@storybook/react-vite";
 import ThumbnailPreview from "@editor/components/tools/validateSignature/reportView/ThumbnailPreview";
 
 const meta = {
-  title: "Tools/ValidateSignature/ReportView/ThumbnailPreview",
+  title: "Tool Parts/ValidateSignature/ReportView/ThumbnailPreview",
   component: ThumbnailPreview,
 } satisfies Meta<typeof ThumbnailPreview>;
 export default meta;

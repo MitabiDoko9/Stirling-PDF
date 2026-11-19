@@ -5,7 +5,7 @@ import EditTableOfContentsWorkbenchView, {
 import { createBookmarkNode } from "@editor/utils/editTableOfContents";
 
 const meta = {
-  title: "Tools/EditTableOfContents/EditTableOfContentsWorkbenchView",
+  title: "Tool Parts/EditTableOfContents/EditTableOfContentsWorkbenchView",
   component: EditTableOfContentsWorkbenchView,
 } satisfies Meta<typeof EditTableOfContentsWorkbenchView>;
 export default meta;

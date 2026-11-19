@@ -243,6 +243,11 @@ const preview: Preview = {
   },
   parameters: {
     layout: "padded",
+    options: {
+      // Everything keeps discovery order; the pieces of tools, which each
+      // tool's own story already shows in place, sit last.
+      storySort: { order: ["*", "Tool Parts"] },
+    },
     controls: {
       matchers: { color: /(background|color)$/i, date: /Date$/i },
     },

@@ -3,7 +3,7 @@ import { Text } from "@mantine/core";
 import ToolStep from "@editor/components/tools/shared/ToolStep";
 
 const meta = {
-  title: "Tools/Shared/ToolStep",
+  title: "Tool Parts/Shared/ToolStep",
   component: ToolStep,
 } satisfies Meta<typeof ToolStep>;
 export default meta;

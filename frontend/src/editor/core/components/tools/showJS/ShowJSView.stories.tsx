@@ -15,7 +15,7 @@ for (let i = 0; i < 3; i++) {
 `;
 
 const meta = {
-  title: "Tools/ShowJS/ShowJSView",
+  title: "Tool Parts/ShowJS/ShowJSView",
   component: ShowJSView,
 } satisfies Meta<typeof ShowJSView>;
 export default meta;

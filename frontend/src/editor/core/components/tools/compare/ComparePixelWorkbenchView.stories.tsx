@@ -66,7 +66,7 @@ const baseResult: CompareResultPixelData = {
 };
 
 const meta = {
-  title: "Tools/Compare/ComparePixelWorkbenchView",
+  title: "Tool Parts/Compare/ComparePixelWorkbenchView",
   component: ComparePixelWorkbenchView,
 } satisfies Meta<typeof ComparePixelWorkbenchView>;
 export default meta;

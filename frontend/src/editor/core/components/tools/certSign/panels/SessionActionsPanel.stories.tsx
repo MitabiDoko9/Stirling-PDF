@@ -32,7 +32,7 @@ const baseSession: SessionDetail = {
 };
 
 const meta = {
-  title: "Tools/CertSign/Panels/SessionActionsPanel",
+  title: "Tool Parts/CertSign/Panels/SessionActionsPanel",
   component: SessionActionsPanel,
   parameters: { layout: "padded" },
 } satisfies Meta<typeof SessionActionsPanel>;

@@ -22,7 +22,7 @@ const populatedOther: PdfOtherInfo = {
 };
 
 const meta = {
-  title: "Tools/GetPdfInfo/Sections/OtherSection",
+  title: "Tool Parts/GetPdfInfo/Sections/OtherSection",
   component: OtherSection,
   parameters: { layout: "padded" },
   args: {

@@ -5,7 +5,7 @@ import { RepairParameters } from "@editor/hooks/tools/repair/useRepairParameters
 const parameters: RepairParameters = {};
 
 const meta = {
-  title: "Tools/Repair/RepairSettings",
+  title: "Tool Parts/Repair/RepairSettings",
   component: RepairSettings,
   args: {
     parameters,

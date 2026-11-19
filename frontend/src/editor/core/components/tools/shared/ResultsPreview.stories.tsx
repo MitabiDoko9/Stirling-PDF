@@ -14,7 +14,7 @@ const files: ReviewFile[] = [
 ];
 
 const meta = {
-  title: "Tools/Shared/ResultsPreview",
+  title: "Tool Parts/Shared/ResultsPreview",
   component: ResultsPreview,
 } satisfies Meta<typeof ResultsPreview>;
 export default meta;

@@ -4,7 +4,7 @@ import RotateAutomationSettings from "@editor/components/tools/rotate/RotateAuto
 import { RotateParameters } from "@editor/hooks/tools/rotate/useRotateParameters";
 
 const meta = {
-  title: "Tools/Rotate/RotateAutomationSettings",
+  title: "Tool Parts/Rotate/RotateAutomationSettings",
   component: RotateAutomationSettings,
   parameters: { layout: "padded" },
   args: {

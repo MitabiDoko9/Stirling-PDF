@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from "@storybook/react-vite";
 import FileSummaryHeader from "@editor/components/tools/validateSignature/reportView/FileSummaryHeader";
 
 const meta = {
-  title: "Tools/ValidateSignature/ReportView/FileSummaryHeader",
+  title: "Tool Parts/ValidateSignature/ReportView/FileSummaryHeader",
   component: FileSummaryHeader,
   args: {
     fileSize: 2_456_789,

@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from "@storybook/react-vite";
 import KeyValueList from "@editor/components/tools/getPdfInfo/shared/KeyValueList";
 
 const meta = {
-  title: "Tools/GetPdfInfo/KeyValueList",
+  title: "Tool Parts/GetPdfInfo/KeyValueList",
   component: KeyValueList,
   parameters: { layout: "padded" },
 } satisfies Meta<typeof KeyValueList>;

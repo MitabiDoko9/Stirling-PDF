@@ -7,7 +7,7 @@ import {
 } from "@editor/components/tools/certSign/CertificateSelector";
 
 const meta = {
-  title: "Tools/CertSign/CertificateSelector",
+  title: "Tool Parts/CertSign/CertificateSelector",
   component: CertificateSelector,
   parameters: { layout: "padded" },
   args: {

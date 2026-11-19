@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from "@storybook/react-vite";
 import ToolLoadingFallback from "@editor/components/tools/ToolLoadingFallback";
 
 const meta: Meta<typeof ToolLoadingFallback> = {
-  title: "Tools/ToolLoadingFallback",
+  title: "Tool Parts/ToolLoadingFallback",
   component: ToolLoadingFallback,
   parameters: { layout: "padded" },
 };

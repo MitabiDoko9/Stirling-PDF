@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from "@storybook/react-vite";
 import FavoriteStar from "@editor/components/tools/toolPicker/FavoriteStar";
 
 const meta = {
-  title: "Tools/ToolPicker/FavoriteStar",
+  title: "Tool Parts/ToolPicker/FavoriteStar",
   component: FavoriteStar,
   parameters: { layout: "centered" },
   args: {

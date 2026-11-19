@@ -5,7 +5,7 @@ import { RemoveCertificateSignParameters } from "@editor/hooks/tools/removeCerti
 const baseParameters: RemoveCertificateSignParameters = {};
 
 const meta = {
-  title: "Tools/RemoveCertificateSign/RemoveCertificateSignSettings",
+  title: "Tool Parts/RemoveCertificateSign/RemoveCertificateSignSettings",
   component: RemoveCertificateSignSettings,
 } satisfies Meta<typeof RemoveCertificateSignSettings>;
 export default meta;

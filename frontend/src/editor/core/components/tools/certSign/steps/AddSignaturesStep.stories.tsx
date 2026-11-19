@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from "@storybook/react-vite";
 import { AddSignaturesStep } from "@editor/components/tools/certSign/steps/AddSignaturesStep";
 
 const meta = {
-  title: "Tools/CertSign/Steps/AddSignaturesStep",
+  title: "Tool Parts/CertSign/Steps/AddSignaturesStep",
   component: AddSignaturesStep,
 } satisfies Meta<typeof AddSignaturesStep>;
 export default meta;

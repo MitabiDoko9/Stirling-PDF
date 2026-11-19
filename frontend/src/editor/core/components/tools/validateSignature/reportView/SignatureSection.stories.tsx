@@ -35,7 +35,7 @@ const buildSignature = (
 });
 
 const meta = {
-  title: "Tools/ValidateSignature/SignatureSection",
+  title: "Tool Parts/ValidateSignature/SignatureSection",
   component: SignatureSection,
 } satisfies Meta<typeof SignatureSection>;
 export default meta;

@@ -167,6 +167,7 @@ export default function OverlayPdfsSettings({
                     {index + 1}
                   </Text>
                   <NumberInput
+                    aria-label={`${t("overlay-pdfs.counts.item", "Count for file")} ${index + 1}`}
                     min={1}
                     step={1}
                     value={parameters.counts[index] ?? 1}

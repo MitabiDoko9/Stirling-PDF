@@ -7,7 +7,7 @@ import {
 } from "@editor/hooks/tools/adjustContrast/useAdjustContrastParameters";
 
 const meta = {
-  title: "Tools/AdjustContrast/AdjustContrastSingleStepSettings",
+  title: "Tool Parts/AdjustContrast/AdjustContrastSingleStepSettings",
   component: AdjustContrastSingleStepSettings,
   parameters: { layout: "padded" },
   args: {

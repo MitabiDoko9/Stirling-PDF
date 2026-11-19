@@ -1,7 +1,9 @@
 import { useEffect, useRef, useState, type ReactNode } from "react";
+import { useIsFetching } from "@tanstack/react-query";
 import { PlatformProviders } from "@editor/components/PlatformProviders";
 import { AppProviders } from "@editor/components/AppProviders";
 import RightSidebar from "@editor/components/tools/RightSidebar";
+import Workbench from "@editor/components/layout/Workbench";
 import { useFileHandler } from "@editor/hooks/useFileHandler";
 import { useToolWorkflowActions } from "@editor/contexts/ToolWorkflowContext";
 import {
@@ -13,6 +15,15 @@ import {
   type FixtureName,
 } from "@editor/components/tools/toolPanelStory/fixtures";
 import type { ToolId } from "@editor/types/toolId";
+import type { WorkbenchType } from "@editor/types/workbench";
+import {
+  useNavigationActions,
+  useNavigationState,
+} from "@editor/contexts/NavigationContext";
+import { clearWorkbenchSession } from "@editor/services/workbenchSession";
+import { fileStorage } from "@editor/services/fileStorage";
+import { automationStorage } from "@editor/services/automationStorage";
+import { ensureLocalPdfAccess } from "@editor/services/pdfAccessService";
 
 export interface ToolPanelStoryProps {
   toolId: ToolId;
@@ -20,10 +31,25 @@ export interface ToolPanelStoryProps {
   files?: readonly FixtureName[];
   /** Merged over the tool's default parameters, for settings that need input to appear. */
   parameters?: Readonly<Record<string, unknown>>;
-  /** File-typed parameters (a certificate, a stamp image), loaded from fixtures. */
-  parameterFiles?: Readonly<Record<string, FixtureName>>;
+  /**
+   * File-typed parameters (a certificate, a stamp image), loaded from fixtures;
+   * a list loads into a File[] parameter.
+   */
+  parameterFiles?: Readonly<
+    Record<string, FixtureName | readonly FixtureName[]>
+  >;
   /** Opens steps the tool would keep collapsed until a file or choice exists. */
   expandAllSteps?: boolean;
+  /**
+   * Holds the workbench at this view while the tool is open, as when the user
+   * switches to it; a tool that switches away on mount is switched back.
+   */
+  workbench?: WorkbenchType;
+  /**
+   * Draws the editor's real workbench beside the panel, for panel states only
+   * the viewer reaches: fields it reads, placement it arms, marks drawn on a page.
+   */
+  showWorkbench?: boolean;
 }
 
 /**
@@ -34,11 +60,13 @@ export interface ToolPanelStoryProps {
  * ToolPanelPreview opens what would otherwise wait on input.
  */
 export function ToolPanelStory(props: ToolPanelStoryProps) {
+  if (!useEmptyWorkbench()) return null;
   return (
     <PlatformProviders>
       <AppProviders>
         <StagedTool {...props}>
-          <PanelFrame />
+          <PanelFrame showWorkbench={props.showWorkbench} />
+          {props.workbench && <HeldWorkbench workbench={props.workbench} />}
         </StagedTool>
       </AppProviders>
     </PlatformProviders>
@@ -46,13 +74,54 @@ export function ToolPanelStory(props: ToolPanelStoryProps) {
 }
 
 /**
+ * The editor reopens the last session's files and saved automations on mount,
+ * from sessionStorage and IndexedDB, so without this a story would show every
+ * earlier story's files and automations beside its own.
+ */
+function useEmptyWorkbench(): boolean {
+  const [empty, setEmpty] = useState(false);
+  useEffect(() => {
+    let cancelled = false;
+    clearWorkbenchSession();
+    void Promise.all([fileStorage.clearAll(), clearSavedAutomations()]).finally(
+      () => {
+        if (!cancelled) setEmpty(true);
+      },
+    );
+    return () => {
+      cancelled = true;
+    };
+  }, []);
+  return empty;
+}
+
+async function clearSavedAutomations(): Promise<void> {
+  const saved = await automationStorage.getAllAutomations();
+  await Promise.all(
+    saved.map((automation) =>
+      automationStorage.deleteAutomation(automation.id),
+    ),
+  );
+}
+
+function HeldWorkbench({ workbench }: { workbench: WorkbenchType }) {
+  const { workbench: current } = useNavigationState();
+  const { actions } = useNavigationActions();
+  useEffect(() => {
+    if (current !== workbench) actions.setWorkbench(workbench);
+  }, [current, workbench, actions]);
+  return null;
+}
+
+/**
  * The editor's row of workbench and tool panel, grown to the panel's full
  * content height so a capture shows every setting rather than a scrolled window.
  * The panel's stage is absolutely positioned, so its height is read, not inherited.
  */
-function PanelFrame() {
+function PanelFrame({ showWorkbench }: { showWorkbench?: boolean }) {
   const frameRef = useRef<HTMLDivElement>(null);
   const [height, setHeight] = useState<number | null>(null);
+  const queriesSettled = useIsFetching() === 0;
 
   useEffect(() => {
     const stage =
@@ -70,6 +139,7 @@ function PanelFrame() {
   return (
     <div
       ref={frameRef}
+      data-queries-settled={queriesSettled}
       style={{
         display: "flex",
         height: height ? `max(100vh, ${height}px)` : "100vh",
@@ -77,7 +147,9 @@ function PanelFrame() {
       }}
     >
       {/* The workbench's slot: sidebar tooltips open into it, as in the editor. */}
-      <div style={{ flex: 1 }} />
+      <div style={{ flex: 1, minWidth: 0, display: "flex" }}>
+        {showWorkbench && <Workbench />}
+      </div>
       <RightSidebar />
     </div>
   );
@@ -103,7 +175,8 @@ function StagedTool({
         loadParameterFiles(parameterFiles),
       ]);
       if (cancelled) return;
-      if (documents.length > 0) await addFiles(documents);
+      if (documents.length > 0)
+        await settlePdfAccess(await addFiles(documents));
       if (cancelled) return;
       // In place before the tool mounts: parameter hooks read it only for their
       // initial state.
@@ -131,13 +204,32 @@ function StagedTool({
   );
 }
 
+/**
+ * The viewer reads each PDF's encryption and signatures as it opens it, and
+ * tools that gate on that access wait for it; the story has no viewer, so the
+ * staged files are read the same way here.
+ */
+async function settlePdfAccess(files: readonly File[]): Promise<void> {
+  await Promise.all(
+    files
+      .filter((file) => file.type === "application/pdf")
+      .map((file) => ensureLocalPdfAccess(file).catch(() => undefined)),
+  );
+}
+
 async function loadParameterFiles(
   parameterFiles: ToolPanelStoryProps["parameterFiles"],
-): Promise<Record<string, File>> {
+): Promise<Record<string, File | File[]>> {
   if (!parameterFiles) return {};
   const entries = await Promise.all(
     Object.entries(parameterFiles).map(
-      async ([key, name]) => [key, await loadFixture(name)] as const,
+      async ([key, names]) =>
+        [
+          key,
+          typeof names === "string"
+            ? await loadFixture(names)
+            : await Promise.all(names.map(loadFixture)),
+        ] as const,
     ),
   );
   return Object.fromEntries(entries);

@@ -108,7 +108,7 @@ const errorData: SignatureValidationReportData = {
 };
 
 const meta = {
-  title: "Tools/ValidateSignature/ValidateSignatureReportView",
+  title: "Tool Parts/ValidateSignature/ValidateSignatureReportView",
   component: ValidateSignatureReportView,
   parameters: { layout: "padded" },
   args: {

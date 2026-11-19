@@ -16,7 +16,7 @@ const buildPages = (count: number): PagePreview[] =>
   }));
 
 const meta = {
-  title: "Tools/Compare/CompareDocumentPane",
+  title: "Tool Parts/Compare/CompareDocumentPane",
   component: CompareDocumentPane,
   // Excluded from the automated (Vitest browser) test run: mounting several of
   // these panes in one page exhausts the headless browser's memory and the page

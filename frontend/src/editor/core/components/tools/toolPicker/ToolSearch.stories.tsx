@@ -48,7 +48,7 @@ function ToolSearchDemo({
 }
 
 const meta = {
-  title: "Tools/ToolPicker/ToolSearch",
+  title: "Tool Parts/ToolPicker/ToolSearch",
   component: ToolSearch,
   decorators: [withProviders],
   args: {

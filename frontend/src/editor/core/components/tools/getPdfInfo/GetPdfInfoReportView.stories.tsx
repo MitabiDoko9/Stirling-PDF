@@ -91,7 +91,7 @@ const emptyData: PdfInfoReportData = {
 };
 
 const meta = {
-  title: "Tools/GetPdfInfo/GetPdfInfoReportView",
+  title: "Tool Parts/GetPdfInfo/GetPdfInfoReportView",
   component: GetPdfInfoReportView,
   parameters: { layout: "padded" },
 } satisfies Meta<typeof GetPdfInfoReportView>;

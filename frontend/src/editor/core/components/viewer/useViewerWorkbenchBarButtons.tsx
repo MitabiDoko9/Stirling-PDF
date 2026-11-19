@@ -175,6 +175,8 @@ export function useViewerWorkbenchBarButtons(
             offset={8}
             opened={isSearchInterfaceVisible}
             onClose={viewer.searchInterfaceActions.close}
+            // The target is a layout wrapper; the button carries the state.
+            withRoles={false}
           >
             <Popover.Target>
               <div style={{ display: "inline-flex" }}>
@@ -191,6 +193,7 @@ export function useViewerWorkbenchBarButtons(
                     className="workbench-bar-action-icon"
                     disabled={disabled}
                     aria-label={searchLabel}
+                    aria-expanded={isSearchInterfaceVisible}
                     onClick={viewer.searchInterfaceActions.toggle}
                   >
                     <Icon name="file-search" size="1.25rem" />
@@ -374,6 +377,7 @@ export function useViewerWorkbenchBarButtons(
             opened={isReadingAloud}
             onClose={() => {}}
             withinPortal
+            withRoles={false}
           >
             <Popover.Target>
               <div style={{ display: "inline-flex" }}>

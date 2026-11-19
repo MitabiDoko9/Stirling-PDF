@@ -67,7 +67,13 @@ function ActionMenu({
   children: ReactNode;
 }) {
   return (
-    <Menu position="bottom-start" withinPortal>
+    // Mantine's focus placeholder is a plain focusable div inside role="menu",
+    // which only menuitems may be; opening on the first item is the ARIA menu pattern.
+    <Menu
+      position="bottom-start"
+      withinPortal
+      withInitialFocusPlaceholder={false}
+    >
       <Menu.Target>
         <DSButton
           variant="secondary"

@@ -9,7 +9,7 @@ const limits = {
 };
 
 const meta = {
-  title: "Tools/Sign/CreateSignatureModal",
+  title: "Tool Parts/Sign/CreateSignatureModal",
   component: CreateSignatureModal,
   parameters: { layout: "fullscreen" },
   args: {

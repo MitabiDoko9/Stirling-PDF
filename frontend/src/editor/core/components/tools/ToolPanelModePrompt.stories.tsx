@@ -26,7 +26,7 @@ function withProviders(Story: () => ReactElement) {
 }
 
 const meta = {
-  title: "Tools/ToolPanelModePrompt",
+  title: "Tool Parts/ToolPanelModePrompt",
   component: ToolPanelModePrompt,
   decorators: [withProviders],
 } satisfies Meta<typeof ToolPanelModePrompt>;

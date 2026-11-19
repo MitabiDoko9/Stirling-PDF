@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from "@storybook/react-vite";
 import SubcategoryHeader from "@editor/components/tools/shared/SubcategoryHeader";
 
 const meta = {
-  title: "Tools/Shared/SubcategoryHeader",
+  title: "Tool Parts/Shared/SubcategoryHeader",
   component: SubcategoryHeader,
 } satisfies Meta<typeof SubcategoryHeader>;
 

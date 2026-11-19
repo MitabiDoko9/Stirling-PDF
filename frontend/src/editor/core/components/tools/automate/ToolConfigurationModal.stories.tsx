@@ -12,7 +12,7 @@ import {
 } from "@editor/hooks/tools/shared/toolOperationTypes";
 
 const meta = {
-  title: "Tools/Automate/ToolConfigurationModal",
+  title: "Tool Parts/Automate/ToolConfigurationModal",
   component: ToolConfigurationModal,
 } satisfies Meta<typeof ToolConfigurationModal>;
 export default meta;

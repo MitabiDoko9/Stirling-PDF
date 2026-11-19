@@ -7,7 +7,7 @@ import {
 import { SPLIT_METHODS } from "@editor/constants/splitConstants";
 
 const meta = {
-  title: "Tools/Split/SplitAutomationSettings",
+  title: "Tool Parts/Split/SplitAutomationSettings",
   component: SplitAutomationSettings,
 } satisfies Meta<typeof SplitAutomationSettings>;
 export default meta;
